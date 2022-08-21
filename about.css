@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:wght@300;400;500;600&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	font-family: 'Poppins', sans-serif;
+}
+.container
+{
+	width: 100vw;
+	height: 4rem;
+	background-color: #263238;
+}
+.logo
+{
+	float: left;
+	margin-top: 7px;
+	margin-left: 100px;
+}
+.logo h1
+{
+	color: #fff;
+
+}
+.nav
+{
+	float: right;
+	display: inline-block;
+	margin-right: 300px;
+	margin-top: 16.5px;
+}
+
+.container::after
+{
+	content: '';
+	clear: both;
+	display: block;
+}
+
+.nav a
+{
+	text-decoration: none;
+	letter-spacing: 2px;
+	color: #fff;
+	padding: 10px 1rem;
+	font-size: 20px;
+}
+
+.nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.nav a:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+.nav a
+{
+	margin-top: 8px;
+}
+.content
+{
+ 	width: 830px;
+	margin-top: 2rem;
+	margin-left: 258px;
+}
+.content h1
+{
+	letter-spacing: 3px;
+padding-bottom: 4px;
+padding-left: 4px;
+ 	border-bottom: 5px solid red;
+}
+.content  p
+{
+	margin-top: 8px;
+}
+.about-wrapper
+{
+	padding: 8px 9.7rem;
+}
+.about-wrapper .left
+{
+	float: left;
+}
+.about-wrapper .right
+{
+	float: right;
+}
+.left ul li,.right ul li
+{
+  list-style: none;
+  padding: 8px;
+}
+.about-wrapper::after
+{
+	content: '';
+	clear: both;
+	display: block;
+}
+
+.left ul li::before
+{
+	content: "\2713";
+	color: red;
+}
+.right ul li::before
+{
+	content: "\2713";
+	color: red;
+}
+.count
+{
+	display: flex;
+	flex-direction: row;
+	margin-left: -50px;
+	margin-top: 9px;
+}
+.count-item
+{
+	padding: 8px 2.5rem 0px 5.5rem;
+	text-align: center;
+	font-size: 1.2em;
+}
+.count-item span
+{
+	font-weight: 600;
+	font-size: 1.7em;
+	color:  #ee4758;
+}
+.last-banner
+{
+	margin-top: 1.3rem;
+	padding: 1.2rem 1rem;
+
+   	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.315);
+	background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+	color: #fff;
+	transition: 0.7s ease;;
+	display: flex;
+	flex-direction: row;
+}
+.right-content
+{
+	float: right;
+	padding: 11px 2.1rem;
+	font-size: 16.6px;
+	transition: 0.6s ease;	
+	margin-left: 6rem;
+	border: 2.5px solid white;
+	cursor: pointer;
+}
+.left-content
+{
+	float: left;
+	margin-top: 9px;
+}
+.right-content a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+.right-content:hover
+{
+	padding: 11px 2.3rem;
+}
